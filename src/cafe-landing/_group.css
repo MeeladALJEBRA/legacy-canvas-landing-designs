@@ -1,0 +1,55 @@
+/* Cafe landing page styles */
+.cafe-landing {
+  --color-espresso: #3B2818;
+  --color-terracotta: #C05C3B;
+  --color-cream: #F9F6F0;
+  --color-sage: #8A9A86;
+}
+
+.cafe-landing h1, .cafe-landing h2, .cafe-landing h3, .cafe-landing h4, .cafe-landing h5, .cafe-landing h6 {
+  font-family: 'Lora', serif;
+}
+
+.cafe-landing p, .cafe-landing span, .cafe-landing div, .cafe-landing a, .cafe-landing button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.cafe-landing .font-serif {
+  font-family: 'Lora', serif;
+}
+
+.cafe-landing .font-sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slow-pan {
+  from {
+    transform: scale(1.05) translate(0, 0);
+  }
+  to {
+    transform: scale(1.1) translate(-1%, -1%);
+  }
+}
+
+.animate-slow-pan {
+  animation: slow-pan 20s ease-in-out infinite alternate;
+}
+
+.timeline-dot {
+  box-shadow: 0 0 0 6px #F9F6F0;
+}
