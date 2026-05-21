@@ -1,0 +1,77 @@
+.jewellery-font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.jewellery-font-sans {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jewellery-gold-text {
+  color: #D4AF37;
+}
+
+.jewellery-gold-bg {
+  background-color: #D4AF37;
+}
+
+.jewellery-gold-border {
+  border-color: #D4AF37;
+}
+
+.jewellery-cream-text {
+  color: #F5F5DC;
+}
+
+.jewellery-dark-bg {
+  background-color: #050505;
+}
+
+.jewellery-charcoal-bg {
+  background-color: #111111;
+}
+
+/* Animations */
+.animate-j-fade-in {
+  opacity: 0;
+  animation: jFadeIn 1.5s ease-out forwards;
+}
+
+.animate-j-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: jSlideUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.delay-200 { animation-delay: 200ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-800 { animation-delay: 800ms; }
+
+@keyframes jFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes jSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #D4AF37;
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .timeline-line::before {
+    left: 24px;
+    transform: none;
+  }
+}
