@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+
+.theme-ladies-footwear {
+  --lf-wine: 74, 21, 37;
+  --lf-wine-light: 104, 45, 63;
+  --lf-cream: 250, 248, 245;
+  --lf-gold: 197, 168, 128;
+  --lf-charcoal: 42, 38, 38;
+  
+  font-family: 'Jost', sans-serif;
+  background-color: rgb(var(--lf-cream));
+  color: rgb(var(--lf-charcoal));
+}
+
+.theme-ladies-footwear h1, 
+.theme-ladies-footwear h2, 
+.theme-ladies-footwear h3, 
+.theme-ladies-footwear h4, 
+.theme-ladies-footwear h5, 
+.theme-ladies-footwear h6,
+.theme-ladies-footwear .font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.lf-fade-in-up {
+  animation: lfFadeInUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.lf-delay-100 { animation-delay: 100ms; }
+.lf-delay-200 { animation-delay: 200ms; }
+.lf-delay-300 { animation-delay: 300ms; }
+
+@keyframes lfFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lf-gold-gradient-text {
+  background: linear-gradient(to right, #b4905d, #e0ca9e, #b4905d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
