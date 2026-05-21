@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-dmsans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.bg-tailor-navy {
+  background-color: #0A1128;
+}
+
+.text-tailor-navy {
+  color: #0A1128;
+}
+
+.bg-tailor-gold {
+  background-color: #D4AF37;
+}
+
+.text-tailor-gold {
+  color: #D4AF37;
+}
+
+.border-tailor-gold {
+  border-color: #D4AF37;
+}
+
+.bg-tailor-charcoal {
+  background-color: #1A1A1A;
+}
+
+.bg-tailor-camel {
+  background-color: #C19A6B;
+}
+
+.text-tailor-camel {
+  color: #C19A6B;
+}
+
+.tailor-pattern {
+  background-image: radial-gradient(#D4AF37 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-color: #0A1128;
+  opacity: 0.95;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
+
+@keyframes draw-line {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.animate-draw-line {
+  animation: draw-line 2s ease-out forwards;
+}
